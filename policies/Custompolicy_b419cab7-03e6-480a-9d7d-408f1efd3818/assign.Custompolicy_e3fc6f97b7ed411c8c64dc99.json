@@ -1,0 +1,43 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "22acd6fc-082f-41a3-8c8f-0ab2b992f417",
+  "tenantId": "5b6a52fe-41b6-4380-b127-4946cd246078",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "Custompolicy",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/FIRSTMG/providers/Microsoft.Authorization/policyDefinitions/b419cab7-03e6-480a-9d7d-408f1efd3818",
+  "scope": "/subscriptions/642c2838-0d0b-4f4d-97b2-5801b5f84f88",
+  "notScopes": [],
+  "parameters": {
+   "logAnalytics": {
+    "value": "/subscriptions/642c2838-0d0b-4f4d-97b2-5801b5f84f88/resourcegroups/rg1/providers/microsoft.operationalinsights/workspaces/claws"
+   },
+   "listOfImageIdToInclude": {
+    "value": [
+     "/subscriptions/642c2838-0d0b-4f4d-97b2-5801b5f84f88/resourceGroups/RG1/providers/Microsoft.Compute/galleries/Gallary123/images/Linuximage/versions/15.35.0"
+    ]
+   }
+  },
+  "description": "",
+  "metadata": {
+   "assignedBy": "Abhinav Anand",
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/642c2838-0d0b-4f4d-97b2-5801b5f84f88"
+   },
+   "createdBy": "8cbace79-23ad-4b65-92aa-3413c88a0948",
+   "createdOn": "2021-07-16T08:50:29.4684117Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/642c2838-0d0b-4f4d-97b2-5801b5f84f88/providers/Microsoft.Authorization/policyAssignments/e3fc6f97b7ed411c8c64dc99",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "e3fc6f97b7ed411c8c64dc99",
+ "location": "eastus"
+}
